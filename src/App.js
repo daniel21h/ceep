@@ -1,8 +1,18 @@
 import React from 'react';
+import { NoteList } from './components/NoteList';
 
 function App() {
   return (
-    <h1>Hello, world!</h1>
+    <section>
+      <form>
+        <input type="text" placeholder="Título" />
+        <textarea placeholder="Escreva sua nota..."></textarea>
+
+        <button>Criar nota</button>
+      </form>
+
+      <NoteList />
+    </section>
   );
 }
 
