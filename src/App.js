@@ -2,6 +2,8 @@ import React from 'react';
 import { NoteList } from './components/NoteList';
 import { Form } from './components/Form';
 
+import './index.css'
+
 function App() {
   return (
     <section>
