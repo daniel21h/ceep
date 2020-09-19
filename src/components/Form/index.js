@@ -16,7 +16,7 @@ export class Form extends Component {
         <input
           type="text"
           placeholder="Título"
-          onChange={this.handleTitleChange}
+          onChange={this.handleTitleChange.bind(this)}
         />
 
         <textarea placeholder="Escreva sua nota..."></textarea>
