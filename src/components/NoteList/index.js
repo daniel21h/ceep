@@ -5,9 +5,8 @@ export class NoteList extends Component {
   render() {
     return (
       <ul>
-        {Array.of("Trabalho", "Trabalho", "Estudos").map(category => (
-          <li>
-            <div>{category}</div>
+        {Array.of("Trabalho", "Trabalho", "Estudos").map((category, index) => (
+          <li key={index}>
             <NoteCard />
           </li>
         ))}
