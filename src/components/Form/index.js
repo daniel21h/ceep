@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+import './styles.css'
 export class Form extends Component {
   constructor(props) {
     super(props)
@@ -26,8 +27,12 @@ export class Form extends Component {
 
   render() {
     return (
-      <form onSubmit={this._createNote.bind(this)}>
+      <form className="form" onSubmit={this._createNote.bind(this)}>
+        <h1>Ceep</h1>
+        <span>Seu editor de notas para treinar ReactJS</span>
+
         <input
+          className="form-input"
           type="text"
           placeholder="Título"
           onChange={this._handleTitleChange.bind(this)}
@@ -38,7 +43,7 @@ export class Form extends Component {
           onChange={this._handleTextChange.bind(this)}
         />
 
-        <button type="submit">Criar nota</button>
+        <button className="form-submit" type="submit">Criar nota</button>
       </form>
     )
   }

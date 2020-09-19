@@ -1,0 +1,13 @@
+@media(max-width: 800px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .form {
+    min-height: 20%;
+  }
+
+  .note-list {
+    grid-template-columns: auto;
+  }
+}

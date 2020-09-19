@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.content {
+  display: flex;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+button, textarea, input {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+:root {
+  --primaria: #58a4b0;
+  --secundaria: #373f51;
+  --secundaria-ativa: #cccccc;
+  --fundo: #ffffff;
+  --fundo-detalhes: #ececec;
+}
